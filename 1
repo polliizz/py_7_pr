@@ -1,0 +1,9 @@
+deposit = float(input("Початкова сума: "))
+rate = float(input("Відсоток річний: "))
+goal = float(input("Бажана сума: "))
+years = 0
+while deposit < goal:
+    deposit += deposit * rate / 100
+    years += 1
+    print(f"{years} рік: {deposit:.2f} грн")
+print(f"Потрібно: {years}")
