@@ -1,0 +1,13 @@
+import random
+secret = random.randint(1, 50)
+for attempt in range(1, 5):
+    guess = int(input(f"Спроба {attempt}: "))
+    if guess == secret:
+        print(f"Вгадано за {attempt} спроб")
+        break
+    elif guess < secret:
+        print("Більше")
+    else:
+        print("Менше")
+else:
+    print(f"Число було: {secret}")
