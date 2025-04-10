@@ -1,0 +1,9 @@
+population = 5
+rate = float(input("% росту за годину: "))
+max_pop = int(input("Максимальність: "))
+hours = 0
+while population < max_pop:
+    print(f"{hours} год: {int(population)} бактерій")
+    population += population * rate / 100
+    hours += 1
+print(f"Потрібно годин: {hours}")
